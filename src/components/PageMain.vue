@@ -2,13 +2,15 @@
 import AboutMenu from '../data/AboutMenu'
 import ImgCarousel from '../data/imgcarousel'
 import ServiceBages from '../data/ServiceBages'
+import BlogPosts from '../data/BlogPosts'
 export default {
     name: 'PageMain',
     data() {
         return {
             dataAboutMenu: AboutMenu,
             dataImgCarousel: ImgCarousel,
-            dataServiceBages: ServiceBages
+            dataServiceBages: ServiceBages,
+            dataBlogPosts: BlogPosts
         }
     },
 }
@@ -131,7 +133,7 @@ export default {
         </section>
         <section class="services">
             <div class="container-fluid m-auto">
-                <div class="row flex-column position-relative ">
+                <div class="row flex-column  ">
                     <div class="col align-items-end flex-column d-flex">
                         <div class="b_title d-flex align-items-center justify-content-between py-5">
                             <span class="px-3">TESTIMONIAL</span>
@@ -139,24 +141,44 @@ export default {
                         </div>
                         <h2 class=" text-end">WHAT'S THE CUSTOMER SAY ABOUT OUR WORK</h2>
                     </div>
-                    <div class="col show_badges position-absolute p-0 m-3">
-                        <div class="container mx-0">
-                            <div class="row px-4">
-                                <div class="col py-5 px-5" v-for="badge in dataServiceBages">
-                                    <div class="bage">
-                                        <p class="text">{{ badge.text }}</p>
-                                        <h4>{{ badge.title }}</h4>
-                                        <p>{{ badge.subTitle }}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
 
                 </div>
             </div>
+            <div class="container show_badges d-flex justify-content-end">
+                <div class="row p-5 ">
+                    <div class="col  gap-5 d-flex p-2">
+                        <div class="bage p-2" v-for="badge in dataServiceBages">
+                            <p class="text">{{ badge.text }}</p>
+                            <h4>{{ badge.title }}</h4>
+                            <p>{{ badge.subTitle }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section class="blog"></section>
+        <section class="blog">
+            <div class="container position-relative py-5">
+                <div class="row flex-column">
+                    <div class="col position-relative py-3">
+                        <div class="b_title d-flex align-items-center  py-5">
+                            <div class="decoration_line"></div>
+                            <span class="px-3">BLOG</span>
+                        </div>
+                        <h2><strong>THE RECENT NEWS YOU MUST READ IT</strong></h2>
+                        <button class="border-0 position-absolute">VIEW ALL</button>
+                    </div>
+                    <div class="col d-flex gap-5 py-5">
+                        <div class="post position-relative" v-for="post in dataBlogPosts">
+                            <img :src="post.url" alt="post.title">
+                            <div class="info position-absolute p-5">
+                                <span class="px-5 py-2"><strong>{{post.data}}</strong></span><span ><strong>by {{post.autor}}</strong></span>
+                                <h3 class="px-5 py-2">{{ post.title }}</h3>
+                                <p class="px-5">{{ post.text }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 </template>
