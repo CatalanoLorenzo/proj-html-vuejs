@@ -1,0 +1,23 @@
+@use './partials/generals';
+@use './partials/main';
+@use './partials/header';
+@use 'node_modules/bootstrap/scss/bootstrap.scss';
+@use './partials/variables' as *;
+
+header{
+    background-color: $bg-grey-3;
+    background-image: url(../img/portrait-of-young-architect-woman-on-meeting-KFZCE3A.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% ,0%;
+    height: 998px;
+    .navbar{
+        .container{
+            .navbar-brand{
+                img{
+                  width: 113px;
+                  height: 24px;
+                }
+            }
+        }
+    }
+}
