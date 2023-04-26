@@ -78,6 +78,7 @@ header {
 main {
     background-color: $bg-grey-3 ;
     .home {
+        background-color: $bg-white;
         .decoration_line {
             background-color: #39FFBF;
             top: 25%;
@@ -145,40 +146,71 @@ main {
         }
     }
     .projects {
-        
-        color: $text-white;
-        .b_title{
-            .decoration_line{
-                height: 5px;
-                background-color: #39FFBF;
-                width: 2%;
-            }
-        }
-        h2{
+        .container{
+            max-width: 1600px;
 
-        }
-        .button_left{
-            background-color: $bb-gre-2;
-            svg{
-                width: 25px;
-                height: 25px;
-                fill: $fill-white;
+            .b_title{
+                .decoration_line{
+                    height: 5px;
+                    background-color: #39FFBF;
+                    width: 2%;
+                }
+            }
+            h2{
+    
+            }
+            .button_left{
+                background-color: $bb-gre-2;
+                svg{
+                    width: 25px;
+                    height: 25px;
+                    fill: $fill-white;
+                }
+            }
+            .button_right{
+                background-color: $bb-gre-2;
+                svg{
+                    width: 25px;
+                    height: 25px;
+                    fill: $fill-white;
+                }
+            }
+            .carousel{
+                img{
+                    width: 100%;
+                }
             }
         }
-        .button_right{
-            background-color: $bb-gre-2;
-            svg{
-                width: 25px;
-                height: 25px;
-                fill: $fill-white;
-            }
-        }
-        .carousel{
-            img{}
-        }
+        color: $text-white;
+        
     }
     .services {
-        max-width: 1600px;
+        color: $bg-white;
+        .container-fluid{
+            max-width: 1600px;
+            .row{
+                .col{
+                    .b_title{
+                        width: 60%;
+                        .decoration_line{
+                            height: 5px;
+                            background-color: #39FFBF;
+                            width: 5%;
+                        }
+                    }
+                    h2{
+                        width: 30%;
+                    }
+                }
+                .show_badges{
+                    top: 20%;
+                    width: 90%;
+                    background-color: $bg-white;
+                    color: $text-grey-10;
+                }
+            }
+            
+        }
     }
     .blog {
         max-width: 1600px;
