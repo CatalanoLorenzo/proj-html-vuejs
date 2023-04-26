@@ -76,6 +76,7 @@ header {
 }
 
 main {
+    background-color: $bg-grey-3 ;
     .home {
         .decoration_line {
             background-color: #39FFBF;
@@ -112,7 +113,6 @@ main {
 
     }
     .about{
-        background-color: $bg-grey-3 ;
         color: $text-white;
         .top{
             .container-fluid{
@@ -145,7 +145,37 @@ main {
         }
     }
     .projects {
-        max-width: 1600px;
+        
+        color: $text-white;
+        .b_title{
+            .decoration_line{
+                height: 5px;
+                background-color: #39FFBF;
+                width: 2%;
+            }
+        }
+        h2{
+
+        }
+        .button_left{
+            background-color: $bb-gre-2;
+            svg{
+                width: 25px;
+                height: 25px;
+                fill: $fill-white;
+            }
+        }
+        .button_right{
+            background-color: $bb-gre-2;
+            svg{
+                width: 25px;
+                height: 25px;
+                fill: $fill-white;
+            }
+        }
+        .carousel{
+            img{}
+        }
     }
     .services {
         max-width: 1600px;
