@@ -4,62 +4,153 @@
 @use 'node_modules/bootstrap/scss/bootstrap.scss';
 @use './partials/variables' as *;
 
-header{
+header {
     background-color: $bg-grey-3;
     background-image: url(../img/portrait-of-young-architect-woman-on-meeting-KFZCE3A.jpg);
     background-repeat: no-repeat;
-    background-position: 100% ,0%;
+    background-position: 100%, 0%;
     height: 998px;
-    .navbar{
-        .container{
+
+    .navbar {
+        .container {
             max-width: 1600px;
-            .navbar-brand{
-                img{
-                  width: 113px;
-                  height: 24px;
+
+            .navbar-brand {
+                img {
+                    width: 113px;
+                    height: 24px;
                 }
             }
-            .navbar-nav{
-                .nav-item{
-                    .nav-link{
+
+            .navbar-nav {
+                .nav-item {
+                    .nav-link {
                         color: $text-white;
                     }
                 }
             }
         }
     }
-    .jumbo{
+
+    .jumbo {
         max-width: 1600px;
         height: 100%;
         color: $text-white;
-        .container{
+
+        .container {
             height: 100%;
-            .row{
-                .col-4{
-                    
-                    .decoration_line{
+
+            .row {
+                .col-4 {
+
+                    .decoration_line {
                         width: 52px;
                         height: 5px;
                         background-color: $bg-gren;
                     }
-                    .b_title{
+
+                    .b_title {
                         font-size: 1rem;
                     }
-                    h1{
+
+                    h1 {
                         font-size: 77px;
                     }
-                    button{
+
+                    button {
                         color: $text-grey-10;
                         background-color: $bg-gren-2;
                         width: 230px;
                         height: 67px;
                     }
-                    .play_icon{
+
+                    .play_icon {
                         height: 57px;
                         width: 57px;
                     }
                 }
             }
         }
+    }
+
+}
+
+main {
+    .home {
+        .decoration_line {
+            background-color: #39FFBF;
+            top: 25%;
+            left: 42%;
+            height: 5px;
+            width: 58%;
+        }
+        .container {
+            max-width: 1600px;
+            .row {
+                .col {
+                    .circle {
+                        width: 4rem;
+                        height: 4rem;
+                        svg {
+                            object-fit: contain;
+                            g {
+                                fill: $text-red;
+                            }
+                        }
+                    }
+                    .text_area {
+                        width: 100%;
+                        ove
+                        img{
+                            object-fit: contain;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    .about{
+        background-color: $bg-grey-3 ;
+        color: $text-white;
+        .top{
+            .container-fluid{
+                .row{
+                    .col{
+                        .text_area{
+                            width: 45%;
+                            .b_title{
+                                .decoration_line{
+                                    height: 5px;
+                                    background-color: #39FFBF;
+                                    width: 13%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+        .bottom{
+            width: 90%;
+            background-color: $bg-gren-2 ;
+            color: $text-grey-10;
+            button{
+                background-color:$bg-red ;
+                color: $text-white;
+                right: 0;
+            }
+        }
+    }
+    .projects {
+        max-width: 1600px;
+    }
+    .services {
+        max-width: 1600px;
+    }
+    .blog {
+        max-width: 1600px;
     }
 }
