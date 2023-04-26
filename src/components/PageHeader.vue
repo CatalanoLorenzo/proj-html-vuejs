@@ -1,9 +1,11 @@
+
 <script>
+import NavMenu from '../data/NavMenu'
 export default {
     name: 'PageHeader',
     data() {
         return {
-
+            dataNavMenu: NavMenu
         }
     },
 }
@@ -16,19 +18,11 @@ export default {
                     <img src="../assets/img/logotype.png" alt="Bootstrap" width="30" height="24">
                 </a>
 
-                <ul class="navbar-nav d-flex ">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <ul class="navbar-nav d-flex  ">
+                    <li class="nav-item" v-for="li in dataNavMenu">
+                        <a class="nav-link active" :href="li.toUpperCase()">{{ li.toUpperCase() }}</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
-                    </li>
+                    
                 </ul>
 
             </div>
