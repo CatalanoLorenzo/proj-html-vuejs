@@ -29,20 +29,42 @@
     }
 
     .show_badges {
-
         color: $text-grey-10;
         max-width: 100%;
+        background-color: $bg-white;
 
         .row {
             width: 92%;
-            background-color: $bg-white;
 
             .col {
                 .bage {
                     width: 29%;
+                    top: -43%;
+
+                    .text {
+                        z-index: 5;
+                        top: 60%
+                    }
+
+                    img {
+                        z-index: 2;
+                        width: 100%;
+                        display: none;
+                    }
+                }
+
+                .bage:hover {
+                    .text {
+                        color: $text-white ;
+                        padding: 0 2rem;
+                    }
+                    img{
+                        display: block;
+                        
+                    }
                 }
             }
-        }
 
+        }
     }
 }

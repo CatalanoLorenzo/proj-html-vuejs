@@ -23,13 +23,16 @@ export default {
 
             </div>
         </div>
-        <div class="container show_badges d-flex justify-content-end">
+        <div class="container show_badges d-flex justify-content-end py-5">
             <div class="row p-5 ">
-                <div class="col  gap-5 d-flex p-2">
-                    <div class="bage p-2" v-for="badge in dataServiceBages">
-                        <p class="text">{{ badge.text }}</p>
-                        <h4>{{ badge.title }}</h4>
-                        <p>{{ badge.subTitle }}</p>
+                <div class="col  gap-5 d-flex p-2 py-5">
+                    <div class="bage py-5 position-relative" v-for="badge in dataServiceBages" >
+                        <img :src="badge.src" alt="" class=" position-absolute">
+                        <div class="text position-relative" >
+                            <p>{{ badge.text }}</p>
+                            <h4><strong>{{ badge.title }}</strong></h4>
+                            <p>{{ badge.subTitle }}</p>
+                        </div>
                     </div>
                 </div>
             </div>

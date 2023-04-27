@@ -85,7 +85,6 @@ export default {
                                 </svg>
                             </button>
                         </div>
-
                     </div>
                     <CarouselMain :array="dataImgCarousel"></CarouselMain>
                 </div>
