@@ -18,7 +18,7 @@ export default {
         </div>
         <ul class="navbar-item d-flex py-3">
             <li v-for="menu in dataNavMenu" class="p-2">
-                <a href="menu.toUpperCase()">{{ menu.title.toUpperCase() }}</a>
+                <a :href=" '#' + menu.title.toUpperCase()">{{ menu.title.toUpperCase() }}</a>
             </li>
         </ul>
         <div class="nav-link ">

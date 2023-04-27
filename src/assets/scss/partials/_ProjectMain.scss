@@ -1,4 +1,5 @@
 @use './variables' as *;
+@use './CarouselMain';
 
 .projects {
     .container {
@@ -34,11 +35,7 @@
             }
         }
 
-        .carousel {
-            img {
-                width: 100%;
-            }
-        }
+
     }
 
     color: $text-white;

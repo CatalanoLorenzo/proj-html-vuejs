@@ -1,0 +1,38 @@
+@use './variables' as *;
+
+.carousel {
+    .container{
+        .row{
+            .col{
+                img {
+                    width: 100%;
+                }
+                .info{
+                    bottom: 5%;
+                    .text{
+                        h4{}
+                        p{}
+
+                    }
+                    button{
+                        width: 70px;
+                        height: 70px;
+                        background-color: $bg-grey-3 ;
+                        svg{
+                            fill: $fill-white ;
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
+                }
+            }
+            .col:hover{
+                background-color: $bg-red ;
+                img{
+                    
+                    filter: brightness(0.4) opacity(0.4);
+                }
+            }
+        }
+    }
+}
