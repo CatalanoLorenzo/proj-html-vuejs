@@ -1,4 +1,7 @@
 @use './variables' as *;
-footer{
+@use './TopFooter';
+@use './BottomFooter';
 
+footer {
+    background-color: $bg-grey-3 ;
 }

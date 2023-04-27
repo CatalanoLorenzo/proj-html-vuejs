@@ -1,5 +1,9 @@
 @use './variables' as *;
-
+@use './AboutMain';
+@use './BlogMain';
+@use './HomeMain';
+@use './ProjectMain';
+@use './ServiceMain';
 main {
-
+    background-color: $bg-grey-3 ;
 }

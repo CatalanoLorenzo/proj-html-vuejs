@@ -1,13 +1,17 @@
 <script>
-export default{
+import TopFooter from './TopFooter.vue'
+import BottomFooter from './BottomFooter.vue'
+export default {
     name: 'PageFooter',
-    data() {
-        return {
-            
-        }
+    components: {
+        TopFooter,
+        BottomFooter
     },
 }
 </script>
 <template>
-
+    <footer>
+        <TopFooter></TopFooter>
+        <BottomFooter></BottomFooter>
+    </footer>
 </template>

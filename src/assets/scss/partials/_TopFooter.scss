@@ -1,0 +1,25 @@
+@use './variables' as *;
+
+.top {
+    width: 100%;
+    color: $text-white ;
+    background-image: url(../img/business-people-working-together-on-project-and-B3MZ4TX.jpg);
+    background-size: cover;
+
+    .talk_about {
+        .container {
+            .row {
+                .col {
+                    p {
+                        width: 30%;
+                    }
+
+                    button {
+                        color: $text-white ;
+                        background-color: $bg-grey-3 ;
+                    }
+                }
+            }
+        }
+    }
+}

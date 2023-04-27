@@ -1,0 +1,44 @@
+@use './variables' as *;
+
+.home {
+    background-color: $bg-white;
+
+    .decoration_line {
+        background-color: #39FFBF;
+        top: 25%;
+        left: 42%;
+        height: 5px;
+        width: 58%;
+    }
+
+    .container {
+        max-width: 1600px;
+
+        .row {
+            .col {
+                .circle {
+                    width: 4rem;
+                    height: 4rem;
+
+                    svg {
+                        object-fit: contain;
+
+                        g {
+                            fill: $text-red;
+                        }
+                    }
+                }
+
+                .text_area {
+                    width: 100%;
+
+                    ove img {
+                        object-fit: contain;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+}

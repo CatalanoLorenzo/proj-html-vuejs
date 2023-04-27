@@ -1,0 +1,52 @@
+@use './variables' as *;
+
+.blog {
+    color: $bg-white;
+
+    .container {
+        max-width: 1600px;
+
+        .row {
+            .col {
+                .b_title {
+                    width: 60%;
+
+                    .decoration_line {
+                        height: 5px;
+                        background-color: #39FFBF;
+                        width: 5%;
+                    }
+                }
+
+                button {
+                    color: $text-grey-10;
+                    background-color: $bg-gren-2;
+                    width: 230px;
+                    height: 45px;
+                    right: 1%;
+                    bottom: 0;
+                }
+
+                .post {
+                    width: 50%;
+
+                    img {
+                        width: 100%;
+                    }
+
+                    .info {
+                        background-color: $bg-white ;
+                        color: $text-grey-3 ;
+                        width: 79%;
+                        bottom: -15%;
+                        right: 0;
+
+                        span {
+                            color: $text-red ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

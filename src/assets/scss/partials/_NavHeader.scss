@@ -1,0 +1,32 @@
+@use './variables' as *;
+
+.navbar {
+    z-index: 3;
+    background-color: $bg-white-2;
+
+    .container {
+        max-width: 1600px;
+
+        .navbar-brand {
+            img {
+                width: 113px;
+                height: 24px;
+            }
+        }
+
+        .navbar-nav {
+            .select {
+                border-top: 2px solid $text-white;
+                margin-top: -6px;
+            }
+            .nav-item {
+
+                .nav-link {
+                    color: $text-white;
+
+
+                }
+            }
+        }
+    }
+}

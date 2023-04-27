@@ -1,0 +1,46 @@
+@use './variables' as *;
+
+.projects {
+    .container {
+        max-width: 1600px;
+
+        .b_title {
+            .decoration_line {
+                height: 5px;
+                background-color: #39FFBF;
+                width: 2%;
+            }
+        }
+
+        h2 {}
+
+        .button_left {
+            background-color: $bg-grey-2;
+
+            svg {
+                width: 25px;
+                height: 25px;
+                fill: $fill-white;
+            }
+        }
+
+        .button_right {
+            background-color: $bg-grey-2;
+
+            svg {
+                width: 25px;
+                height: 25px;
+                fill: $fill-white;
+            }
+        }
+
+        .carousel {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    color: $text-white;
+
+}

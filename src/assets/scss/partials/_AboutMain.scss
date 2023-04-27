@@ -1,0 +1,38 @@
+@use './variables' as *;
+
+.about {
+    color: $text-white;
+
+    .top {
+        .container-fluid {
+            .row {
+                .col {
+                    .text_area {
+                        width: 45%;
+
+                        .b_title {
+                            .decoration_line {
+                                height: 5px;
+                                background-color: #39FFBF;
+                                width: 13%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    .bottom {
+        width: 90%;
+        background-color: $bg-gren-2 ;
+        color: $text-grey-10;
+
+        button {
+            background-color: $bg-red ;
+            color: $text-white;
+            right: 0;
+        }
+    }
+}

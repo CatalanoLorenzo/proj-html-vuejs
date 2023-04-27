@@ -1,0 +1,48 @@
+@use './variables' as *;
+
+.services {
+    color: $bg-white;
+
+    .container-fluid {
+        max-width: 1600px;
+
+        .row {
+            .col {
+                .b_title {
+                    width: 60%;
+
+                    .decoration_line {
+                        height: 5px;
+                        background-color: #39FFBF;
+                        width: 5%;
+                    }
+                }
+
+                h2 {
+                    width: 30%;
+                }
+            }
+
+
+        }
+
+    }
+
+    .show_badges {
+
+        color: $text-grey-10;
+        max-width: 100%;
+
+        .row {
+            width: 92%;
+            background-color: $bg-white;
+
+            .col {
+                .bage {
+                    width: 29%;
+                }
+            }
+        }
+
+    }
+}

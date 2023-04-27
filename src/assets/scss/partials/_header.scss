@@ -1,4 +1,10 @@
 @use './variables' as *;
-header{
-
+@use './NavHeader';
+@use './JumboHeader';
+header {
+    background-color: $bg-grey-3;
+    background-image: url(../img/portrait-of-young-architect-woman-on-meeting-KFZCE3A.jpg);
+    background-repeat: no-repeat;
+    background-position: 100%, 0%;
+    height: 998px;
 }

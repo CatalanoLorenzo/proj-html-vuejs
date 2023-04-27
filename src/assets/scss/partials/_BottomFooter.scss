@@ -1,0 +1,50 @@
+@use './variables' as *;
+
+.bottom {
+    nav {
+        .navbar-brand {
+            img {
+                width: 46%;
+                height: 39%;
+            }
+        }
+
+        .navbar-item {
+            margin-left: -10%;
+
+            li {
+                list-style: none;
+
+                a {
+                    color: $text-white;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .nav-link {
+            a {
+
+                svg {
+                    fill: $fill-white;
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+    }
+
+    hr {
+        color: $text-white ;
+    }
+
+    div {
+        .row {
+            .col {
+                p {
+                    color: $text-grey-3 ;
+                }
+            }
+        }
+    }
+}
