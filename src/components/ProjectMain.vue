@@ -10,7 +10,7 @@ export default {
 }
 </script>
 <template>
-    <section class="projects p-5 m-0">
+    <section class="projects p-5 m-0" id="PROJECTS">
         <div class="container">
             <div class="row">
                 <div class="col">

@@ -10,12 +10,11 @@ export default {
     methods: {
         chageSelect(position) {
 
-            for (let i = 0; i < this.dataNavMenu.length; i++) {
-                const element = this.dataNavMenu[i];
+            this.dataNavMenu.forEach((element)=>{
                 if (element.select) {
                     element.select = false
                 }
-            }
+            })
             this.dataNavMenu[position - 1].select = true
         }
     },

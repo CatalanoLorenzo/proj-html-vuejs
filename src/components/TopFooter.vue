@@ -4,7 +4,7 @@ export default {
 }
 </script>
 <template>
-    <div class="top">
+    <div class="top" id="CONTACT">
         <section class="talk_about">
             <div class="container py-5">
                 <div class="row py-5">

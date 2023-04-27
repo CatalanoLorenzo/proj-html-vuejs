@@ -10,7 +10,7 @@ export default{
 }
 </script>
 <template>
-    <section class="blog">
+    <section class="blog" id="BLOG">
         <div class="container position-relative py-5">
             <div class="row flex-column">
                 <div class="col position-relative py-3">

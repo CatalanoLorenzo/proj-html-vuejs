@@ -4,7 +4,7 @@ export default{
 }
 </script>
 <template>
-    <section class="about">
+    <section class="about" id="ABOUT">
         <div class="top">
             <div class="container-fluid mx-0 px-0">
                 <div class="row  m-0">

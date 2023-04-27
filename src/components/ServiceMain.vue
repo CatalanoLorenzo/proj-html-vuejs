@@ -10,7 +10,7 @@ export default {
 }
 </script>
 <template>
-    <section class="services">
+    <section class="services" id="SERVICES">
         <div class="container-fluid m-auto">
             <div class="row flex-column  ">
                 <div class="col align-items-end flex-column d-flex">
