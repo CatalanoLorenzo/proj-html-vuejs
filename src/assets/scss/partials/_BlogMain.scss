@@ -26,6 +26,10 @@
                     right: 1%;
                     bottom: 0;
                 }
+                button:hover{
+                    background-color: $bg-red;
+                    color: $text-white ;
+                }
 
                 .post {
                     width: 50%;

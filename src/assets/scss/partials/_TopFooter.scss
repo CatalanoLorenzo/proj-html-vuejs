@@ -18,6 +18,11 @@
                         color: $text-white ;
                         background-color: $bg-grey-3 ;
                     }
+
+                    button:hover {
+                        color: $text-grey-10;
+                        background-color: $bg-gren-2;
+                    }
                 }
             }
         }

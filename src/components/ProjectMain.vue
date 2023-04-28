@@ -10,47 +10,45 @@ export default {
     data() {
         return {
             dataImgCarousel: ImgCarousel,
-            counter: 0
+            counter: 1
         }
     },
     methods: {
         chageVisibleMore() {
-            if ((this.counter ) == this.dataImgCarousel.length - 3) {
-                this.dataImgCarousel[this.counter].visible = false
+            if (this.counter  == this.dataImgCarousel.length - 2) {
+                this.dataImgCarousel[this.counter - 1].visible = false
                 this.dataImgCarousel[0].visible = true
                 this.counter++
-            }else if ((this.counter ) == this.dataImgCarousel.length - 2){
-                this.dataImgCarousel[this.counter].visible = false
+            }else if(this.counter == this.dataImgCarousel.length - 1 ){
+                this.dataImgCarousel[this.counter - 1].visible = false
                 this.dataImgCarousel[1].visible = true
-                this.counter++
-            }else if ((this.counter ) == this.dataImgCarousel.length - 1){
-                this.dataImgCarousel[this.counter].visible = false
-                this.dataImgCarousel[2].visible = true
                 this.counter = 0
-                   
+            }else if(this.counter == 0 ){
+                this.dataImgCarousel[this.dataImgCarousel.length - 1].visible = false
+                this.dataImgCarousel[2].visible = true
+                this.counter = 1    
             }else{
-                this.dataImgCarousel[this.counter + 3].visible = true
-                this.dataImgCarousel[this.counter].visible = false
+                this.dataImgCarousel[this.counter - 1].visible = false
+                this.dataImgCarousel[this.counter + 2].visible = true
                 this.counter++
             }
         },
         chageVisibleLess() {
-            if ((this.counter ) == 2) {
-                this.dataImgCarousel[this.counter].visible = false
+            if (this.counter  == 1) {
+                this.dataImgCarousel[this.counter + 1].visible = false
                 this.dataImgCarousel[this.dataImgCarousel.length - 1].visible = true
                 this.counter--
-            }else if ((this.counter ) == 1){
-                this.dataImgCarousel[this.counter].visible = false
+            }else if(this.counter == 0 ){
+                this.dataImgCarousel[this.counter + 1].visible = false
                 this.dataImgCarousel[this.dataImgCarousel.length - 2].visible = true
-                this.counter--
-            }else if (this.counter  == 0){
-                this.dataImgCarousel[this.counter].visible = false
-                this.dataImgCarousel[this.dataImgCarousel.length - 3].visible = true
                 this.counter = this.dataImgCarousel.length - 1
-                   
+            }else if(this.counter == this.dataImgCarousel.length - 1 ){
+                this.dataImgCarousel[0].visible = false
+                this.dataImgCarousel[this.counter - 2].visible = true
+                this.counter--   
             }else{
-                this.dataImgCarousel[this.counter ].visible = false
-                this.dataImgCarousel[this.counter - 3].visible = true
+                this.dataImgCarousel[this.counter + 1].visible = false
+                this.dataImgCarousel[this.counter - 2].visible = true
                 this.counter--
             }
         }

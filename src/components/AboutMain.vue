@@ -5,7 +5,7 @@ export default{
 </script>
 <template>
     <section class="about" id="ABOUT">
-        <div class="top">
+        <div class="top_about">
             <div class="container-fluid mx-0 px-0">
                 <div class="row  m-0">
                     <div class="col-6 px-0">

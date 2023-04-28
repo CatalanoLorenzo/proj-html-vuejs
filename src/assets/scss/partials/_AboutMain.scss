@@ -3,7 +3,7 @@
 .about {
     color: $text-white;
 
-    .top {
+    .top_about {
         .container-fluid {
             .row {
                 .col {
@@ -16,6 +16,14 @@
                                 background-color: #39FFBF;
                                 width: 13%;
                             }
+                        }
+                    }
+                }
+                .col-6{
+                    .teams_img{
+                        background-color: $bg-red ;
+                        img{
+                            filter: opacity(0.5);
                         }
                     }
                 }
@@ -33,6 +41,11 @@
             background-color: $bg-red ;
             color: $text-white;
             right: 0;
+        }
+
+        button:hover {
+            color: $text-white ;
+            background-color: $bg-grey-3 ;
         }
     }
 }

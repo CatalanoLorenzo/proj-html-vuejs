@@ -13,7 +13,7 @@ export default {
     <section class="services" id="SERVICES">
         <div class="container-fluid m-auto">
             <div class="row flex-column  ">
-                <div class="col align-items-end flex-column d-flex">
+                <div class="col align-items-end flex-column d-flex py-5">
                     <div class="b_title d-flex align-items-center justify-content-between py-5">
                         <span class="px-3">TESTIMONIAL</span>
                         <div class="decoration_line"></div>

@@ -30,7 +30,7 @@ export default {
             </a>
             <!-- link nav menu -->
             <ul class="navbar-nav d-flex flex-row">
-                <li class="nav-item px-3 py-2" v-for="li in dataNavMenu" :class="li.select ? 'select' : ''">
+                <li class="nav-item px-3 " v-for="li in dataNavMenu" :class="li.select ? 'select' : ''">
                     <a class="nav-link " :href="'#' + li.title.toUpperCase()" :value="li.position" @click="chageSelect(li.position)">{{ li.title.toUpperCase() }}</a>
                 </li>
             </ul>
