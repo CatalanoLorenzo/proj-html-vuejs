@@ -7,4 +7,27 @@ header {
     background-repeat: no-repeat;
     background-position: 100%, 0%;
     height: 998px;
+    .box{
+        bottom: 4%;
+        width: 98%;
+        z-index: 4;
+        .icon_top{
+            background-color: $bg-white ;
+            width: 50px;
+            height: 50px;
+            svg{
+                width: 50%;
+            }        
+        }
+        .icon_chat{
+            background-color: $bg-blue;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            svg{
+                fill: $text-grey;
+                width: 65%;
+            }
+        }
+    }
 }
