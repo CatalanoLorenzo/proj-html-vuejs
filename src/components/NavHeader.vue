@@ -1,21 +1,18 @@
 <script>
-import NavMenu from '../data/NavMenu'
-export default {
+export default{
     name: 'NavHeader',
-    data() {
-        return {
-            dataNavMenu: NavMenu
-        }
+    props:{
+        arrayMenu:Array
     },
     methods: {
         chageSelect(position) {
 
-            this.dataNavMenu.forEach((element)=>{
+            this.arrayMenu.forEach((element)=>{
                 if (element.select) {
                     element.select = false
                 }
             })
-            this.dataNavMenu[position - 1].select = true
+            this.arrayMenu[position - 1].select = true
         }
     },
 }
@@ -30,7 +27,7 @@ export default {
             </a>
             <!-- link nav menu -->
             <ul class="navbar-nav d-flex flex-row">
-                <li class="nav-item px-3 " v-for="li in dataNavMenu" :class="li.select ? 'select' : ''">
+                <li class="nav-item px-3 " v-for="li in arrayMenu" :class="li.select ? 'select' : ''">
                     <a class="nav-link " :href="'#' + li.title.toUpperCase()" :value="li.position" @click="chageSelect(li.position)">{{ li.title.toUpperCase() }}</a>
                 </li>
             </ul>

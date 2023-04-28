@@ -1,11 +1,12 @@
 <script>
-import NavMenu from '../data/NavMenu'
-import IconSocial from '../data/IconSocial'
+import IconSocial from '../data/IconSocial';
 export default {
     name: 'NavFooter',
+    props:{
+        arrayMenu:Array
+    },
     data() {
         return {
-            dataNavMenu: NavMenu,
             dataIconSocial: IconSocial
         }
     },
@@ -17,7 +18,7 @@ export default {
             <img src="../assets/img/logotype-2-300x50.png" alt="">
         </div>
         <ul class="navbar-item d-flex py-3">
-            <li v-for="menu in dataNavMenu" class="p-2">
+            <li v-for="menu in arrayMenu" class="p-2">
                 <a :href=" '#' + menu.title.toUpperCase()">{{ menu.title.toUpperCase() }}</a>
             </li>
         </ul>
